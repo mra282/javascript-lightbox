@@ -81,4 +81,9 @@ function openLightbox(image, images) {
     };
     imageContainer.appendChild(nextButton);
   }
+  lightboxContainer.addEventListener('click', function(event) {
+    if (event.target === lightboxContainer) {
+      lightboxContainer.remove();
+    }
+  });
 }
